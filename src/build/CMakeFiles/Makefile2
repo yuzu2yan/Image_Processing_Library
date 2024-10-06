@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /Users/yuzu/Advanced_Robotics/src/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/gray_scale.dir/all
+all: CMakeFiles/binarization.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/gray_scale.dir/clean
+clean: CMakeFiles/binarization.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/gray_scale.dir
+# Target rules for target CMakeFiles/binarization.dir
 
 # All Build rule for target.
-CMakeFiles/gray_scale.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gray_scale.dir/build.make CMakeFiles/gray_scale.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gray_scale.dir/build.make CMakeFiles/gray_scale.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/yuzu/Advanced_Robotics/src/build/CMakeFiles --progress-num=1,2,3,4 "Built target gray_scale"
-.PHONY : CMakeFiles/gray_scale.dir/all
+CMakeFiles/binarization.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binarization.dir/build.make CMakeFiles/binarization.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binarization.dir/build.make CMakeFiles/binarization.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/yuzu/Advanced_Robotics/src/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target binarization"
+.PHONY : CMakeFiles/binarization.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/gray_scale.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yuzu/Advanced_Robotics/src/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gray_scale.dir/all
+CMakeFiles/binarization.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yuzu/Advanced_Robotics/src/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/binarization.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yuzu/Advanced_Robotics/src/build/CMakeFiles 0
-.PHONY : CMakeFiles/gray_scale.dir/rule
+.PHONY : CMakeFiles/binarization.dir/rule
 
 # Convenience name for target.
-gray_scale: CMakeFiles/gray_scale.dir/rule
-.PHONY : gray_scale
+binarization: CMakeFiles/binarization.dir/rule
+.PHONY : binarization
 
 # clean rule for target.
-CMakeFiles/gray_scale.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gray_scale.dir/build.make CMakeFiles/gray_scale.dir/clean
-.PHONY : CMakeFiles/gray_scale.dir/clean
+CMakeFiles/binarization.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binarization.dir/build.make CMakeFiles/binarization.dir/clean
+.PHONY : CMakeFiles/binarization.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

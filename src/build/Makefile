@@ -117,24 +117,48 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named gray_scale
+# Target rules for targets named binarization
 
 # Build rule for target.
-gray_scale: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gray_scale
-.PHONY : gray_scale
+binarization: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 binarization
+.PHONY : binarization
 
 # fast build rule for target.
-gray_scale/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gray_scale.dir/build.make CMakeFiles/gray_scale.dir/build
-.PHONY : gray_scale/fast
+binarization/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binarization.dir/build.make CMakeFiles/binarization.dir/build
+.PHONY : binarization/fast
+
+binarization.o: binarization.cpp.o
+.PHONY : binarization.o
+
+# target to build an object file
+binarization.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binarization.dir/build.make CMakeFiles/binarization.dir/binarization.cpp.o
+.PHONY : binarization.cpp.o
+
+binarization.i: binarization.cpp.i
+.PHONY : binarization.i
+
+# target to preprocess a source file
+binarization.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binarization.dir/build.make CMakeFiles/binarization.dir/binarization.cpp.i
+.PHONY : binarization.cpp.i
+
+binarization.s: binarization.cpp.s
+.PHONY : binarization.s
+
+# target to generate assembly for a file
+binarization.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binarization.dir/build.make CMakeFiles/binarization.dir/binarization.cpp.s
+.PHONY : binarization.cpp.s
 
 gray_scale.o: gray_scale.cpp.o
 .PHONY : gray_scale.o
 
 # target to build an object file
 gray_scale.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gray_scale.dir/build.make CMakeFiles/gray_scale.dir/gray_scale.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binarization.dir/build.make CMakeFiles/binarization.dir/gray_scale.cpp.o
 .PHONY : gray_scale.cpp.o
 
 gray_scale.i: gray_scale.cpp.i
@@ -142,7 +166,7 @@ gray_scale.i: gray_scale.cpp.i
 
 # target to preprocess a source file
 gray_scale.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gray_scale.dir/build.make CMakeFiles/gray_scale.dir/gray_scale.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binarization.dir/build.make CMakeFiles/binarization.dir/gray_scale.cpp.i
 .PHONY : gray_scale.cpp.i
 
 gray_scale.s: gray_scale.cpp.s
@@ -150,7 +174,7 @@ gray_scale.s: gray_scale.cpp.s
 
 # target to generate assembly for a file
 gray_scale.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gray_scale.dir/build.make CMakeFiles/gray_scale.dir/gray_scale.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binarization.dir/build.make CMakeFiles/binarization.dir/gray_scale.cpp.s
 .PHONY : gray_scale.cpp.s
 
 main.o: main.cpp.o
@@ -158,7 +182,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gray_scale.dir/build.make CMakeFiles/gray_scale.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binarization.dir/build.make CMakeFiles/binarization.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -166,7 +190,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gray_scale.dir/build.make CMakeFiles/gray_scale.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binarization.dir/build.make CMakeFiles/binarization.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -174,7 +198,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gray_scale.dir/build.make CMakeFiles/gray_scale.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binarization.dir/build.make CMakeFiles/binarization.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 read_pixel_values.o: read_pixel_values.cpp.o
@@ -182,7 +206,7 @@ read_pixel_values.o: read_pixel_values.cpp.o
 
 # target to build an object file
 read_pixel_values.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gray_scale.dir/build.make CMakeFiles/gray_scale.dir/read_pixel_values.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binarization.dir/build.make CMakeFiles/binarization.dir/read_pixel_values.cpp.o
 .PHONY : read_pixel_values.cpp.o
 
 read_pixel_values.i: read_pixel_values.cpp.i
@@ -190,7 +214,7 @@ read_pixel_values.i: read_pixel_values.cpp.i
 
 # target to preprocess a source file
 read_pixel_values.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gray_scale.dir/build.make CMakeFiles/gray_scale.dir/read_pixel_values.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binarization.dir/build.make CMakeFiles/binarization.dir/read_pixel_values.cpp.i
 .PHONY : read_pixel_values.cpp.i
 
 read_pixel_values.s: read_pixel_values.cpp.s
@@ -198,7 +222,7 @@ read_pixel_values.s: read_pixel_values.cpp.s
 
 # target to generate assembly for a file
 read_pixel_values.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gray_scale.dir/build.make CMakeFiles/gray_scale.dir/read_pixel_values.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binarization.dir/build.make CMakeFiles/binarization.dir/read_pixel_values.cpp.s
 .PHONY : read_pixel_values.cpp.s
 
 # Help Target
@@ -209,7 +233,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... gray_scale"
+	@echo "... binarization"
+	@echo "... binarization.o"
+	@echo "... binarization.i"
+	@echo "... binarization.s"
 	@echo "... gray_scale.o"
 	@echo "... gray_scale.i"
 	@echo "... gray_scale.s"

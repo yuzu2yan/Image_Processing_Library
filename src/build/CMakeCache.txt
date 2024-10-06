@@ -146,7 +146,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=gray_scale
+CMAKE_PROJECT_NAME:STATIC=binarization
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib
@@ -215,6 +215,15 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //The directory containing a CMake configuration file for OpenCV.
 OpenCV_DIR:PATH=/opt/homebrew/lib/cmake/opencv4
+
+//Value Computed by CMake
+binarization_BINARY_DIR:STATIC=/Users/yuzu/Advanced_Robotics/src/build
+
+//Value Computed by CMake
+binarization_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+binarization_SOURCE_DIR:STATIC=/Users/yuzu/Advanced_Robotics/src
 
 //Value Computed by CMake
 gray_scale_BINARY_DIR:STATIC=/Users/yuzu/Advanced_Robotics/src/build

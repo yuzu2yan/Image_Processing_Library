@@ -1,6 +1,6 @@
 #include "gray_scale.hpp"
 
-cv::Mat gray_scale(std::vector<std::vector<std::vector<int>>> pixel_values) {
+std::vector<std::vector<int>> gray_scale(std::vector<std::vector<std::vector<int>>> pixel_values) {
   std::vector<std::vector<int>> gray_scale_values;
   for (int i = 0; i < pixel_values.size(); i++) {
     std::vector<int> gray_scale_row;
@@ -10,12 +10,5 @@ cv::Mat gray_scale(std::vector<std::vector<std::vector<int>>> pixel_values) {
     }
     gray_scale_values.push_back(gray_scale_row);
   }
-  
-  cv::Mat gray_scale_img(pixel_values.size(), pixel_values[0].size(), CV_8UC1); // 8-bit unsigned char, 1 channel
-  for (int i = 0; i < gray_scale_values.size(); i++) {
-    for (int j = 0; j < gray_scale_values[i].size(); j++) {
-      gray_scale_img.at<uchar>(i, j) = gray_scale_values[i][j];
-    }
-  }
-  return gray_scale_img;
+  return gray_scale_values;
 }
