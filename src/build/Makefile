@@ -117,41 +117,89 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named read_pixel_value
+# Target rules for targets named gray_scale
 
 # Build rule for target.
-read_pixel_value: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 read_pixel_value
-.PHONY : read_pixel_value
+gray_scale: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gray_scale
+.PHONY : gray_scale
 
 # fast build rule for target.
-read_pixel_value/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_pixel_value.dir/build.make CMakeFiles/read_pixel_value.dir/build
-.PHONY : read_pixel_value/fast
+gray_scale/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gray_scale.dir/build.make CMakeFiles/gray_scale.dir/build
+.PHONY : gray_scale/fast
 
-read_pixel_value.o: read_pixel_value.cpp.o
-.PHONY : read_pixel_value.o
+gray_scale.o: gray_scale.cpp.o
+.PHONY : gray_scale.o
 
 # target to build an object file
-read_pixel_value.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_pixel_value.dir/build.make CMakeFiles/read_pixel_value.dir/read_pixel_value.cpp.o
-.PHONY : read_pixel_value.cpp.o
+gray_scale.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gray_scale.dir/build.make CMakeFiles/gray_scale.dir/gray_scale.cpp.o
+.PHONY : gray_scale.cpp.o
 
-read_pixel_value.i: read_pixel_value.cpp.i
-.PHONY : read_pixel_value.i
+gray_scale.i: gray_scale.cpp.i
+.PHONY : gray_scale.i
 
 # target to preprocess a source file
-read_pixel_value.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_pixel_value.dir/build.make CMakeFiles/read_pixel_value.dir/read_pixel_value.cpp.i
-.PHONY : read_pixel_value.cpp.i
+gray_scale.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gray_scale.dir/build.make CMakeFiles/gray_scale.dir/gray_scale.cpp.i
+.PHONY : gray_scale.cpp.i
 
-read_pixel_value.s: read_pixel_value.cpp.s
-.PHONY : read_pixel_value.s
+gray_scale.s: gray_scale.cpp.s
+.PHONY : gray_scale.s
 
 # target to generate assembly for a file
-read_pixel_value.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_pixel_value.dir/build.make CMakeFiles/read_pixel_value.dir/read_pixel_value.cpp.s
-.PHONY : read_pixel_value.cpp.s
+gray_scale.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gray_scale.dir/build.make CMakeFiles/gray_scale.dir/gray_scale.cpp.s
+.PHONY : gray_scale.cpp.s
+
+main.o: main.cpp.o
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gray_scale.dir/build.make CMakeFiles/gray_scale.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gray_scale.dir/build.make CMakeFiles/gray_scale.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gray_scale.dir/build.make CMakeFiles/gray_scale.dir/main.cpp.s
+.PHONY : main.cpp.s
+
+read_pixel_values.o: read_pixel_values.cpp.o
+.PHONY : read_pixel_values.o
+
+# target to build an object file
+read_pixel_values.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gray_scale.dir/build.make CMakeFiles/gray_scale.dir/read_pixel_values.cpp.o
+.PHONY : read_pixel_values.cpp.o
+
+read_pixel_values.i: read_pixel_values.cpp.i
+.PHONY : read_pixel_values.i
+
+# target to preprocess a source file
+read_pixel_values.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gray_scale.dir/build.make CMakeFiles/gray_scale.dir/read_pixel_values.cpp.i
+.PHONY : read_pixel_values.cpp.i
+
+read_pixel_values.s: read_pixel_values.cpp.s
+.PHONY : read_pixel_values.s
+
+# target to generate assembly for a file
+read_pixel_values.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gray_scale.dir/build.make CMakeFiles/gray_scale.dir/read_pixel_values.cpp.s
+.PHONY : read_pixel_values.cpp.s
 
 # Help Target
 help:
@@ -161,10 +209,16 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... read_pixel_value"
-	@echo "... read_pixel_value.o"
-	@echo "... read_pixel_value.i"
-	@echo "... read_pixel_value.s"
+	@echo "... gray_scale"
+	@echo "... gray_scale.o"
+	@echo "... gray_scale.i"
+	@echo "... gray_scale.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
+	@echo "... read_pixel_values.o"
+	@echo "... read_pixel_values.i"
+	@echo "... read_pixel_values.s"
 .PHONY : help
 
 

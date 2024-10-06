@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /Users/yuzu/Advanced_Robotics/src/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/read_pixel_value.dir/all
+all: CMakeFiles/gray_scale.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/read_pixel_value.dir/clean
+clean: CMakeFiles/gray_scale.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/read_pixel_value.dir
+# Target rules for target CMakeFiles/gray_scale.dir
 
 # All Build rule for target.
-CMakeFiles/read_pixel_value.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_pixel_value.dir/build.make CMakeFiles/read_pixel_value.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_pixel_value.dir/build.make CMakeFiles/read_pixel_value.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/yuzu/Advanced_Robotics/src/build/CMakeFiles --progress-num=1,2 "Built target read_pixel_value"
-.PHONY : CMakeFiles/read_pixel_value.dir/all
+CMakeFiles/gray_scale.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gray_scale.dir/build.make CMakeFiles/gray_scale.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gray_scale.dir/build.make CMakeFiles/gray_scale.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/yuzu/Advanced_Robotics/src/build/CMakeFiles --progress-num=1,2,3,4 "Built target gray_scale"
+.PHONY : CMakeFiles/gray_scale.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/read_pixel_value.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yuzu/Advanced_Robotics/src/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/read_pixel_value.dir/all
+CMakeFiles/gray_scale.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yuzu/Advanced_Robotics/src/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gray_scale.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yuzu/Advanced_Robotics/src/build/CMakeFiles 0
-.PHONY : CMakeFiles/read_pixel_value.dir/rule
+.PHONY : CMakeFiles/gray_scale.dir/rule
 
 # Convenience name for target.
-read_pixel_value: CMakeFiles/read_pixel_value.dir/rule
-.PHONY : read_pixel_value
+gray_scale: CMakeFiles/gray_scale.dir/rule
+.PHONY : gray_scale
 
 # clean rule for target.
-CMakeFiles/read_pixel_value.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_pixel_value.dir/build.make CMakeFiles/read_pixel_value.dir/clean
-.PHONY : CMakeFiles/read_pixel_value.dir/clean
+CMakeFiles/gray_scale.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gray_scale.dir/build.make CMakeFiles/gray_scale.dir/clean
+.PHONY : CMakeFiles/gray_scale.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
