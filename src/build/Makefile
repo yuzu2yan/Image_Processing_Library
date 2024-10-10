@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named binarization
+# Target rules for targets named filter
 
 # Build rule for target.
-binarization: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 binarization
-.PHONY : binarization
+filter: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 filter
+.PHONY : filter
 
 # fast build rule for target.
-binarization/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/binarization.dir/build.make CMakeFiles/binarization.dir/build
-.PHONY : binarization/fast
+filter/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/filter.dir/build.make CMakeFiles/filter.dir/build
+.PHONY : filter/fast
 
 binarization.o: binarization.cpp.o
 .PHONY : binarization.o
 
 # target to build an object file
 binarization.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/binarization.dir/build.make CMakeFiles/binarization.dir/binarization.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/filter.dir/build.make CMakeFiles/filter.dir/binarization.cpp.o
 .PHONY : binarization.cpp.o
 
 binarization.i: binarization.cpp.i
@@ -142,7 +142,7 @@ binarization.i: binarization.cpp.i
 
 # target to preprocess a source file
 binarization.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/binarization.dir/build.make CMakeFiles/binarization.dir/binarization.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/filter.dir/build.make CMakeFiles/filter.dir/binarization.cpp.i
 .PHONY : binarization.cpp.i
 
 binarization.s: binarization.cpp.s
@@ -150,15 +150,39 @@ binarization.s: binarization.cpp.s
 
 # target to generate assembly for a file
 binarization.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/binarization.dir/build.make CMakeFiles/binarization.dir/binarization.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/filter.dir/build.make CMakeFiles/filter.dir/binarization.cpp.s
 .PHONY : binarization.cpp.s
+
+gaussian_filter.o: gaussian_filter.cpp.o
+.PHONY : gaussian_filter.o
+
+# target to build an object file
+gaussian_filter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/filter.dir/build.make CMakeFiles/filter.dir/gaussian_filter.cpp.o
+.PHONY : gaussian_filter.cpp.o
+
+gaussian_filter.i: gaussian_filter.cpp.i
+.PHONY : gaussian_filter.i
+
+# target to preprocess a source file
+gaussian_filter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/filter.dir/build.make CMakeFiles/filter.dir/gaussian_filter.cpp.i
+.PHONY : gaussian_filter.cpp.i
+
+gaussian_filter.s: gaussian_filter.cpp.s
+.PHONY : gaussian_filter.s
+
+# target to generate assembly for a file
+gaussian_filter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/filter.dir/build.make CMakeFiles/filter.dir/gaussian_filter.cpp.s
+.PHONY : gaussian_filter.cpp.s
 
 gray_scale.o: gray_scale.cpp.o
 .PHONY : gray_scale.o
 
 # target to build an object file
 gray_scale.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/binarization.dir/build.make CMakeFiles/binarization.dir/gray_scale.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/filter.dir/build.make CMakeFiles/filter.dir/gray_scale.cpp.o
 .PHONY : gray_scale.cpp.o
 
 gray_scale.i: gray_scale.cpp.i
@@ -166,7 +190,7 @@ gray_scale.i: gray_scale.cpp.i
 
 # target to preprocess a source file
 gray_scale.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/binarization.dir/build.make CMakeFiles/binarization.dir/gray_scale.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/filter.dir/build.make CMakeFiles/filter.dir/gray_scale.cpp.i
 .PHONY : gray_scale.cpp.i
 
 gray_scale.s: gray_scale.cpp.s
@@ -174,7 +198,7 @@ gray_scale.s: gray_scale.cpp.s
 
 # target to generate assembly for a file
 gray_scale.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/binarization.dir/build.make CMakeFiles/binarization.dir/gray_scale.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/filter.dir/build.make CMakeFiles/filter.dir/gray_scale.cpp.s
 .PHONY : gray_scale.cpp.s
 
 main.o: main.cpp.o
@@ -182,7 +206,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/binarization.dir/build.make CMakeFiles/binarization.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/filter.dir/build.make CMakeFiles/filter.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -190,7 +214,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/binarization.dir/build.make CMakeFiles/binarization.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/filter.dir/build.make CMakeFiles/filter.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -198,15 +222,63 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/binarization.dir/build.make CMakeFiles/binarization.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/filter.dir/build.make CMakeFiles/filter.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+mean_filter.o: mean_filter.cpp.o
+.PHONY : mean_filter.o
+
+# target to build an object file
+mean_filter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/filter.dir/build.make CMakeFiles/filter.dir/mean_filter.cpp.o
+.PHONY : mean_filter.cpp.o
+
+mean_filter.i: mean_filter.cpp.i
+.PHONY : mean_filter.i
+
+# target to preprocess a source file
+mean_filter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/filter.dir/build.make CMakeFiles/filter.dir/mean_filter.cpp.i
+.PHONY : mean_filter.cpp.i
+
+mean_filter.s: mean_filter.cpp.s
+.PHONY : mean_filter.s
+
+# target to generate assembly for a file
+mean_filter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/filter.dir/build.make CMakeFiles/filter.dir/mean_filter.cpp.s
+.PHONY : mean_filter.cpp.s
+
+median_filter.o: median_filter.cpp.o
+.PHONY : median_filter.o
+
+# target to build an object file
+median_filter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/filter.dir/build.make CMakeFiles/filter.dir/median_filter.cpp.o
+.PHONY : median_filter.cpp.o
+
+median_filter.i: median_filter.cpp.i
+.PHONY : median_filter.i
+
+# target to preprocess a source file
+median_filter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/filter.dir/build.make CMakeFiles/filter.dir/median_filter.cpp.i
+.PHONY : median_filter.cpp.i
+
+median_filter.s: median_filter.cpp.s
+.PHONY : median_filter.s
+
+# target to generate assembly for a file
+median_filter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/filter.dir/build.make CMakeFiles/filter.dir/median_filter.cpp.s
+.PHONY : median_filter.cpp.s
 
 read_pixel_values.o: read_pixel_values.cpp.o
 .PHONY : read_pixel_values.o
 
 # target to build an object file
 read_pixel_values.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/binarization.dir/build.make CMakeFiles/binarization.dir/read_pixel_values.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/filter.dir/build.make CMakeFiles/filter.dir/read_pixel_values.cpp.o
 .PHONY : read_pixel_values.cpp.o
 
 read_pixel_values.i: read_pixel_values.cpp.i
@@ -214,7 +286,7 @@ read_pixel_values.i: read_pixel_values.cpp.i
 
 # target to preprocess a source file
 read_pixel_values.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/binarization.dir/build.make CMakeFiles/binarization.dir/read_pixel_values.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/filter.dir/build.make CMakeFiles/filter.dir/read_pixel_values.cpp.i
 .PHONY : read_pixel_values.cpp.i
 
 read_pixel_values.s: read_pixel_values.cpp.s
@@ -222,7 +294,7 @@ read_pixel_values.s: read_pixel_values.cpp.s
 
 # target to generate assembly for a file
 read_pixel_values.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/binarization.dir/build.make CMakeFiles/binarization.dir/read_pixel_values.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/filter.dir/build.make CMakeFiles/filter.dir/read_pixel_values.cpp.s
 .PHONY : read_pixel_values.cpp.s
 
 # Help Target
@@ -233,16 +305,25 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... binarization"
+	@echo "... filter"
 	@echo "... binarization.o"
 	@echo "... binarization.i"
 	@echo "... binarization.s"
+	@echo "... gaussian_filter.o"
+	@echo "... gaussian_filter.i"
+	@echo "... gaussian_filter.s"
 	@echo "... gray_scale.o"
 	@echo "... gray_scale.i"
 	@echo "... gray_scale.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... mean_filter.o"
+	@echo "... mean_filter.i"
+	@echo "... mean_filter.s"
+	@echo "... median_filter.o"
+	@echo "... median_filter.i"
+	@echo "... median_filter.s"
 	@echo "... read_pixel_values.o"
 	@echo "... read_pixel_values.i"
 	@echo "... read_pixel_values.s"

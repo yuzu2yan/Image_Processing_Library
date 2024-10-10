@@ -146,7 +146,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=binarization
+CMAKE_PROJECT_NAME:STATIC=filter
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib
@@ -224,6 +224,15 @@ binarization_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 binarization_SOURCE_DIR:STATIC=/Users/yuzu/Advanced_Robotics/src
+
+//Value Computed by CMake
+filter_BINARY_DIR:STATIC=/Users/yuzu/Advanced_Robotics/src/build
+
+//Value Computed by CMake
+filter_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+filter_SOURCE_DIR:STATIC=/Users/yuzu/Advanced_Robotics/src
 
 //Value Computed by CMake
 gray_scale_BINARY_DIR:STATIC=/Users/yuzu/Advanced_Robotics/src/build

@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/yuzu/Advanced_Robotics/src/binarization.cpp" "CMakeFiles/binarization.dir/binarization.cpp.o" "gcc" "CMakeFiles/binarization.dir/binarization.cpp.o.d"
   "/Users/yuzu/Advanced_Robotics/src/gray_scale.cpp" "CMakeFiles/binarization.dir/gray_scale.cpp.o" "gcc" "CMakeFiles/binarization.dir/gray_scale.cpp.o.d"
   "/Users/yuzu/Advanced_Robotics/src/main.cpp" "CMakeFiles/binarization.dir/main.cpp.o" "gcc" "CMakeFiles/binarization.dir/main.cpp.o.d"
+  "/Users/yuzu/Advanced_Robotics/src/mean_filter.cpp" "CMakeFiles/binarization.dir/mean_filter.cpp.o" "gcc" "CMakeFiles/binarization.dir/mean_filter.cpp.o.d"
   "/Users/yuzu/Advanced_Robotics/src/read_pixel_values.cpp" "CMakeFiles/binarization.dir/read_pixel_values.cpp.o" "gcc" "CMakeFiles/binarization.dir/read_pixel_values.cpp.o.d"
   )
 
