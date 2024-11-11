@@ -1,49 +1,39 @@
 #include "main.hpp"
 
 int main() {
-  cv::Mat img = cv::imread("./../../images/10382092_10207430436141925_4049554338188553602_o.jpg");
+  cv::Mat img = cv::imread("./../../images/356195440_10234923472730657_4874638015857572311_n.jpg");
   if (img.empty()) {
     std::cerr << "Could not open or find the image." << std::endl;
     return -1;
   }
   std::vector<std::vector<std::vector<int>>> pixel_values = read_pixel_values(img);
   std::vector<std::vector<int>> gray_scale_values = gray_scale(pixel_values);
-  std::vector<std::vector<int>> binarized_values = binarization(gray_scale_values);
-  std::vector<std::vector<int>> mean_filtered_values = mean_filter(gray_scale_values, 9);
-  std::vector<std::vector<int>> gaussian_filtered_values = gaussian_filter(gray_scale_values, 9, 1.41);
-  std::vector<std::vector<int>> median_filtered_values = median_filter(gray_scale_values, 9);
+  std::vector<std::vector<int>> sobel_values = sobel_filter(gray_scale_values);
+  std::vector<std::vector<int>> prewitt_values = prewitt_filter(gray_scale_values);
 
-  cv::Mat mean_filtered_img = cv::Mat::zeros(img.size(), img.type());
-  for (int i = 0; i < mean_filtered_values.size(); i++) {
-    for (int j = 0; j < mean_filtered_values[i].size(); j++) {
-      mean_filtered_img.at<cv::Vec3b>(i, j) = cv::Vec3b(mean_filtered_values[i][j], mean_filtered_values[i][j], mean_filtered_values[i][j]);
+  cv::Mat sobel_img = cv::Mat::zeros(img.size(), CV_8UC1);
+  for (int i = 0; i < sobel_values.size(); i++) {
+    for (int j = 0; j < sobel_values[i].size(); j++) {
+      sobel_img.at<uchar>(i, j) = sobel_values[i][j];
     }
   }
+  cv::imwrite("./../../images/sobel.jpg", sobel_img);
 
-  cv::Mat gaussian_filtered_img = cv::Mat::zeros(img.size(), img.type());
-  for (int i = 0; i < gaussian_filtered_values.size(); i++) {
-    for (int j = 0; j < gaussian_filtered_values[i].size(); j++) {
-      gaussian_filtered_img.at<cv::Vec3b>(i, j) = cv::Vec3b(gaussian_filtered_values[i][j], gaussian_filtered_values[i][j], gaussian_filtered_values[i][j]);
+  cv::Mat prewitt_img = cv::Mat::zeros(img.size(), CV_8UC1);
+  for (int i = 0; i < prewitt_values.size(); i++) {
+    for (int j = 0; j < prewitt_values[i].size(); j++) {
+      prewitt_img.at<uchar>(i, j) = prewitt_values[i][j];
     }
   }
+  cv::imwrite("./../../images/prewitt.jpg", prewitt_img);
 
-  cv::Mat median_filtered_img = cv::Mat::zeros(img.size(), img.type());
-  for (int i = 0; i < median_filtered_values.size(); i++) {
-    for (int j = 0; j < median_filtered_values[i].size(); j++) {
-      median_filtered_img.at<cv::Vec3b>(i, j) = cv::Vec3b(median_filtered_values[i][j], median_filtered_values[i][j], median_filtered_values[i][j]);
-    }
-  }
-
-  cv::Mat gray_scale_img = cv::Mat::zeros(img.size(), img.type());
+  cv::Mat gray_scale_img = cv::Mat::zeros(img.size(), CV_8UC1);
   for (int i = 0; i < gray_scale_values.size(); i++) {
     for (int j = 0; j < gray_scale_values[i].size(); j++) {
-      gray_scale_img.at<cv::Vec3b>(i, j) = cv::Vec3b(gray_scale_values[i][j], gray_scale_values[i][j], gray_scale_values[i][j]);
+      gray_scale_img.at<uchar>(i, j) = gray_scale_values[i][j];
     }
   }
+  cv::imwrite("./../../images/gray_scale.jpg", gray_scale_img);
 
-  cv::imwrite("./../../images/mean_filtered_img.jpg", mean_filtered_img);
-  cv::imwrite("./../../images/gaussian_filtered_img.jpg", gaussian_filtered_img);
-  cv::imwrite("./../../images/median_filtered_img.jpg", median_filtered_img);
-  cv::imwrite("./../../images/gray_scale_img.jpg", gray_scale_img);
   return 0;
 }

@@ -69,66 +69,38 @@ include CMakeFiles/filter.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/filter.dir/flags.make
 
-CMakeFiles/filter.dir/median_filter.cpp.o: CMakeFiles/filter.dir/flags.make
-CMakeFiles/filter.dir/median_filter.cpp.o: /Users/yuzu/Advanced_Robotics/src/median_filter.cpp
-CMakeFiles/filter.dir/median_filter.cpp.o: CMakeFiles/filter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/yuzu/Advanced_Robotics/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/filter.dir/median_filter.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/filter.dir/median_filter.cpp.o -MF CMakeFiles/filter.dir/median_filter.cpp.o.d -o CMakeFiles/filter.dir/median_filter.cpp.o -c /Users/yuzu/Advanced_Robotics/src/median_filter.cpp
+CMakeFiles/filter.dir/prewitt_filter.cpp.o: CMakeFiles/filter.dir/flags.make
+CMakeFiles/filter.dir/prewitt_filter.cpp.o: /Users/yuzu/Advanced_Robotics/src/prewitt_filter.cpp
+CMakeFiles/filter.dir/prewitt_filter.cpp.o: CMakeFiles/filter.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/yuzu/Advanced_Robotics/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/filter.dir/prewitt_filter.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/filter.dir/prewitt_filter.cpp.o -MF CMakeFiles/filter.dir/prewitt_filter.cpp.o.d -o CMakeFiles/filter.dir/prewitt_filter.cpp.o -c /Users/yuzu/Advanced_Robotics/src/prewitt_filter.cpp
 
-CMakeFiles/filter.dir/median_filter.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/filter.dir/median_filter.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/yuzu/Advanced_Robotics/src/median_filter.cpp > CMakeFiles/filter.dir/median_filter.cpp.i
+CMakeFiles/filter.dir/prewitt_filter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/filter.dir/prewitt_filter.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/yuzu/Advanced_Robotics/src/prewitt_filter.cpp > CMakeFiles/filter.dir/prewitt_filter.cpp.i
 
-CMakeFiles/filter.dir/median_filter.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/filter.dir/median_filter.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yuzu/Advanced_Robotics/src/median_filter.cpp -o CMakeFiles/filter.dir/median_filter.cpp.s
+CMakeFiles/filter.dir/prewitt_filter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/filter.dir/prewitt_filter.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yuzu/Advanced_Robotics/src/prewitt_filter.cpp -o CMakeFiles/filter.dir/prewitt_filter.cpp.s
 
-CMakeFiles/filter.dir/gaussian_filter.cpp.o: CMakeFiles/filter.dir/flags.make
-CMakeFiles/filter.dir/gaussian_filter.cpp.o: /Users/yuzu/Advanced_Robotics/src/gaussian_filter.cpp
-CMakeFiles/filter.dir/gaussian_filter.cpp.o: CMakeFiles/filter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/yuzu/Advanced_Robotics/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/filter.dir/gaussian_filter.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/filter.dir/gaussian_filter.cpp.o -MF CMakeFiles/filter.dir/gaussian_filter.cpp.o.d -o CMakeFiles/filter.dir/gaussian_filter.cpp.o -c /Users/yuzu/Advanced_Robotics/src/gaussian_filter.cpp
+CMakeFiles/filter.dir/sobel_filter.cpp.o: CMakeFiles/filter.dir/flags.make
+CMakeFiles/filter.dir/sobel_filter.cpp.o: /Users/yuzu/Advanced_Robotics/src/sobel_filter.cpp
+CMakeFiles/filter.dir/sobel_filter.cpp.o: CMakeFiles/filter.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/yuzu/Advanced_Robotics/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/filter.dir/sobel_filter.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/filter.dir/sobel_filter.cpp.o -MF CMakeFiles/filter.dir/sobel_filter.cpp.o.d -o CMakeFiles/filter.dir/sobel_filter.cpp.o -c /Users/yuzu/Advanced_Robotics/src/sobel_filter.cpp
 
-CMakeFiles/filter.dir/gaussian_filter.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/filter.dir/gaussian_filter.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/yuzu/Advanced_Robotics/src/gaussian_filter.cpp > CMakeFiles/filter.dir/gaussian_filter.cpp.i
+CMakeFiles/filter.dir/sobel_filter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/filter.dir/sobel_filter.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/yuzu/Advanced_Robotics/src/sobel_filter.cpp > CMakeFiles/filter.dir/sobel_filter.cpp.i
 
-CMakeFiles/filter.dir/gaussian_filter.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/filter.dir/gaussian_filter.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yuzu/Advanced_Robotics/src/gaussian_filter.cpp -o CMakeFiles/filter.dir/gaussian_filter.cpp.s
-
-CMakeFiles/filter.dir/mean_filter.cpp.o: CMakeFiles/filter.dir/flags.make
-CMakeFiles/filter.dir/mean_filter.cpp.o: /Users/yuzu/Advanced_Robotics/src/mean_filter.cpp
-CMakeFiles/filter.dir/mean_filter.cpp.o: CMakeFiles/filter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/yuzu/Advanced_Robotics/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/filter.dir/mean_filter.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/filter.dir/mean_filter.cpp.o -MF CMakeFiles/filter.dir/mean_filter.cpp.o.d -o CMakeFiles/filter.dir/mean_filter.cpp.o -c /Users/yuzu/Advanced_Robotics/src/mean_filter.cpp
-
-CMakeFiles/filter.dir/mean_filter.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/filter.dir/mean_filter.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/yuzu/Advanced_Robotics/src/mean_filter.cpp > CMakeFiles/filter.dir/mean_filter.cpp.i
-
-CMakeFiles/filter.dir/mean_filter.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/filter.dir/mean_filter.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yuzu/Advanced_Robotics/src/mean_filter.cpp -o CMakeFiles/filter.dir/mean_filter.cpp.s
-
-CMakeFiles/filter.dir/binarization.cpp.o: CMakeFiles/filter.dir/flags.make
-CMakeFiles/filter.dir/binarization.cpp.o: /Users/yuzu/Advanced_Robotics/src/binarization.cpp
-CMakeFiles/filter.dir/binarization.cpp.o: CMakeFiles/filter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/yuzu/Advanced_Robotics/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/filter.dir/binarization.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/filter.dir/binarization.cpp.o -MF CMakeFiles/filter.dir/binarization.cpp.o.d -o CMakeFiles/filter.dir/binarization.cpp.o -c /Users/yuzu/Advanced_Robotics/src/binarization.cpp
-
-CMakeFiles/filter.dir/binarization.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/filter.dir/binarization.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/yuzu/Advanced_Robotics/src/binarization.cpp > CMakeFiles/filter.dir/binarization.cpp.i
-
-CMakeFiles/filter.dir/binarization.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/filter.dir/binarization.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yuzu/Advanced_Robotics/src/binarization.cpp -o CMakeFiles/filter.dir/binarization.cpp.s
+CMakeFiles/filter.dir/sobel_filter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/filter.dir/sobel_filter.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yuzu/Advanced_Robotics/src/sobel_filter.cpp -o CMakeFiles/filter.dir/sobel_filter.cpp.s
 
 CMakeFiles/filter.dir/gray_scale.cpp.o: CMakeFiles/filter.dir/flags.make
 CMakeFiles/filter.dir/gray_scale.cpp.o: /Users/yuzu/Advanced_Robotics/src/gray_scale.cpp
 CMakeFiles/filter.dir/gray_scale.cpp.o: CMakeFiles/filter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/yuzu/Advanced_Robotics/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/filter.dir/gray_scale.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/yuzu/Advanced_Robotics/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/filter.dir/gray_scale.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/filter.dir/gray_scale.cpp.o -MF CMakeFiles/filter.dir/gray_scale.cpp.o.d -o CMakeFiles/filter.dir/gray_scale.cpp.o -c /Users/yuzu/Advanced_Robotics/src/gray_scale.cpp
 
 CMakeFiles/filter.dir/gray_scale.cpp.i: cmake_force
@@ -142,7 +114,7 @@ CMakeFiles/filter.dir/gray_scale.cpp.s: cmake_force
 CMakeFiles/filter.dir/read_pixel_values.cpp.o: CMakeFiles/filter.dir/flags.make
 CMakeFiles/filter.dir/read_pixel_values.cpp.o: /Users/yuzu/Advanced_Robotics/src/read_pixel_values.cpp
 CMakeFiles/filter.dir/read_pixel_values.cpp.o: CMakeFiles/filter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/yuzu/Advanced_Robotics/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/filter.dir/read_pixel_values.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/yuzu/Advanced_Robotics/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/filter.dir/read_pixel_values.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/filter.dir/read_pixel_values.cpp.o -MF CMakeFiles/filter.dir/read_pixel_values.cpp.o.d -o CMakeFiles/filter.dir/read_pixel_values.cpp.o -c /Users/yuzu/Advanced_Robotics/src/read_pixel_values.cpp
 
 CMakeFiles/filter.dir/read_pixel_values.cpp.i: cmake_force
@@ -156,7 +128,7 @@ CMakeFiles/filter.dir/read_pixel_values.cpp.s: cmake_force
 CMakeFiles/filter.dir/main.cpp.o: CMakeFiles/filter.dir/flags.make
 CMakeFiles/filter.dir/main.cpp.o: /Users/yuzu/Advanced_Robotics/src/main.cpp
 CMakeFiles/filter.dir/main.cpp.o: CMakeFiles/filter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/yuzu/Advanced_Robotics/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/filter.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/yuzu/Advanced_Robotics/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/filter.dir/main.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/filter.dir/main.cpp.o -MF CMakeFiles/filter.dir/main.cpp.o.d -o CMakeFiles/filter.dir/main.cpp.o -c /Users/yuzu/Advanced_Robotics/src/main.cpp
 
 CMakeFiles/filter.dir/main.cpp.i: cmake_force
@@ -169,10 +141,8 @@ CMakeFiles/filter.dir/main.cpp.s: cmake_force
 
 # Object files for target filter
 filter_OBJECTS = \
-"CMakeFiles/filter.dir/median_filter.cpp.o" \
-"CMakeFiles/filter.dir/gaussian_filter.cpp.o" \
-"CMakeFiles/filter.dir/mean_filter.cpp.o" \
-"CMakeFiles/filter.dir/binarization.cpp.o" \
+"CMakeFiles/filter.dir/prewitt_filter.cpp.o" \
+"CMakeFiles/filter.dir/sobel_filter.cpp.o" \
 "CMakeFiles/filter.dir/gray_scale.cpp.o" \
 "CMakeFiles/filter.dir/read_pixel_values.cpp.o" \
 "CMakeFiles/filter.dir/main.cpp.o"
@@ -180,10 +150,8 @@ filter_OBJECTS = \
 # External object files for target filter
 filter_EXTERNAL_OBJECTS =
 
-filter: CMakeFiles/filter.dir/median_filter.cpp.o
-filter: CMakeFiles/filter.dir/gaussian_filter.cpp.o
-filter: CMakeFiles/filter.dir/mean_filter.cpp.o
-filter: CMakeFiles/filter.dir/binarization.cpp.o
+filter: CMakeFiles/filter.dir/prewitt_filter.cpp.o
+filter: CMakeFiles/filter.dir/sobel_filter.cpp.o
 filter: CMakeFiles/filter.dir/gray_scale.cpp.o
 filter: CMakeFiles/filter.dir/read_pixel_values.cpp.o
 filter: CMakeFiles/filter.dir/main.cpp.o
@@ -245,7 +213,7 @@ filter: /opt/homebrew/lib/libopencv_photo.4.10.0.dylib
 filter: /opt/homebrew/lib/libopencv_imgproc.4.10.0.dylib
 filter: /opt/homebrew/lib/libopencv_core.4.10.0.dylib
 filter: CMakeFiles/filter.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/yuzu/Advanced_Robotics/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable filter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/yuzu/Advanced_Robotics/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable filter"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/filter.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

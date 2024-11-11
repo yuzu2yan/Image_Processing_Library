@@ -7,6 +7,8 @@
 #include "mean_filter.hpp"
 #include "gaussian_filter.hpp"
 #include "median_filter.hpp"
+#include "sobel_filter.hpp"
+#include "prewitt_filter.hpp"
 
 #include <iostream>
 
