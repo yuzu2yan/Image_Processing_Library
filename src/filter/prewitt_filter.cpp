@@ -1,4 +1,4 @@
-#include "prewitt_filter.hpp"
+#include "filter/prewitt_filter.hpp"
 
 std::vector<std::vector<int>> prewitt_filter(std::vector<std::vector<int>> gray_scale_values) {
   std::vector<std::vector<int>> prewitt_values(gray_scale_values.size(), std::vector<int>(gray_scale_values[0].size(), 0));

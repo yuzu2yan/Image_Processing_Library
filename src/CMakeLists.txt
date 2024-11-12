@@ -1,8 +1,8 @@
-cmake_minimum_required(VERSION 3.10)
-project(filter)
+add_subdirectory(filter)
+add_subdirectory(utils)
 
-find_package(OpenCV REQUIRED)
+add_executable(main main.cpp)
 
-add_executable(${PROJECT_NAME} prewitt_filter.cpp sobel_filter.cpp gray_scale.cpp read_pixel_values.cpp main.cpp)
+target_include_directories(main PUBLIC ${OpenCV_INCLUDE_DIRS})
 
-target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS})
+target_link_libraries(main filter utils ${OpenCV_LIBS})

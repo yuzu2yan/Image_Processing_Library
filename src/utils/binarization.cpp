@@ -1,6 +1,6 @@
 #include "binarization.hpp"
 
-std::vector<std::vector<int>> binarization(std::vector<std::vector<int>> gray_scale_values) {
+std::vector<std::vector<int> > binarization(std::vector<std::vector<int> > gray_scale_values) {
   std::vector<int> histogram(256, 0);
   for (int i = 0; i < gray_scale_values.size(); i++) {
     for (int j = 0; j < gray_scale_values[i].size(); j++) {
@@ -36,7 +36,7 @@ std::vector<std::vector<int>> binarization(std::vector<std::vector<int>> gray_sc
     }
   }
 
-  std::vector<std::vector<int>> binarized_values;
+  std::vector<std::vector<int> > binarized_values;
   for (int i = 0; i < gray_scale_values.size(); i++) {
     std::vector<int> binarized_row;
     for (int j = 0; j < gray_scale_values[i].size(); j++) {
