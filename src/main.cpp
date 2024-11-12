@@ -8,24 +8,15 @@ int main() {
   }
   std::vector<std::vector<std::vector<int>>> pixel_values = read_pixel_values(img);
   std::vector<std::vector<int>> gray_scale_values = gray_scale(pixel_values);
-  std::vector<std::vector<int>> sobel_values = sobel_filter(gray_scale_values);
-  std::vector<std::vector<int>> prewitt_values = prewitt_filter(gray_scale_values);
+  std::vector<std::vector<int>> edge_values = canny_edge_filter(gray_scale_values, 130, 230);
 
-  cv::Mat sobel_img = cv::Mat::zeros(img.size(), CV_8UC1);
-  for (int i = 0; i < sobel_values.size(); i++) {
-    for (int j = 0; j < sobel_values[i].size(); j++) {
-      sobel_img.at<uchar>(i, j) = sobel_values[i][j];
+  cv::Mat edge_img = cv::Mat::zeros(img.size(), CV_8UC1);
+  for (int i = 0; i < edge_values.size(); i++) {
+    for (int j = 0; j < edge_values[i].size(); j++) {
+      edge_img.at<uchar>(i, j) = edge_values[i][j];
     }
   }
-  cv::imwrite("./../../images/sobel.jpg", sobel_img);
-
-  cv::Mat prewitt_img = cv::Mat::zeros(img.size(), CV_8UC1);
-  for (int i = 0; i < prewitt_values.size(); i++) {
-    for (int j = 0; j < prewitt_values[i].size(); j++) {
-      prewitt_img.at<uchar>(i, j) = prewitt_values[i][j];
-    }
-  }
-  cv::imwrite("./../../images/prewitt.jpg", prewitt_img);
+  cv::imwrite("./../../images/edge.jpg", edge_img);
 
   cv::Mat gray_scale_img = cv::Mat::zeros(img.size(), CV_8UC1);
   for (int i = 0; i < gray_scale_values.size(); i++) {
@@ -33,7 +24,7 @@ int main() {
       gray_scale_img.at<uchar>(i, j) = gray_scale_values[i][j];
     }
   }
-  cv::imwrite("./../../images/gray_scale.jpg", gray_scale_img);
+  cv::imwrite("./../images/gray_scale.jpg", gray_scale_img);
 
   return 0;
 }

@@ -3,6 +3,7 @@
 
 #include <vector>
 
+std::vector<std::vector<double>> gradient_magnitude(std::vector<std::vector<int>> gray_scale_values);
 std::vector<std::vector<int>> sobel_filter(std::vector<std::vector<int>> gray_scale_values);
 
 #endif // SOBEL_FILTER_HPP
