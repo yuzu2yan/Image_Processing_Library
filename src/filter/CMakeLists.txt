@@ -5,4 +5,5 @@ add_library(filter
             mean_filter.cpp 
             median_filter.cpp 
             gaussian_filter.cpp)
+            
 target_include_directories(filter PUBLIC ${PROJECT_SOURCE_DIR}/include/filter)

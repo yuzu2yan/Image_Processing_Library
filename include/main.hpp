@@ -10,6 +10,7 @@
 #include "sobel_filter.hpp"
 #include "prewitt_filter.hpp"
 #include "canny_edge_filter.hpp"
+#include "template_matching.hpp"
 
 #include <iostream>
 
