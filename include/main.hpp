@@ -11,6 +11,7 @@
 #include "prewitt_filter.hpp"
 #include "canny_edge_filter.hpp"
 #include "template_matching.hpp"
+#include "hough_transform.hpp"
 
 #include <iostream>
 
